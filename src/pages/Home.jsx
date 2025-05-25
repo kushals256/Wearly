@@ -51,7 +51,7 @@ const Home = () => {
       {/* Slide Content */}
       <div className="relative z-10 w-full h-full flex flex-col justify-center items-center px-6 text-center bg-white/70 backdrop-blur-sm transition-all duration-1000 ease-in-out">
         <h1
-          className="text-4xl md:text-6xl font-bold mb-4 text-black"
+          className="text-4xl md:text-5xl font-bold mb-4 text-black"
           style={{ fontFamily: "'Jeju Myeongjo', serif" }}
         >
           {slides[index].title}

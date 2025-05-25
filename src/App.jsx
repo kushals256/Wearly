@@ -6,25 +6,30 @@ import Home from './pages/Home'
 import Rentals from './pages/Rentals'
 import ProductPage from './components/products/ProductPage'
 import ProfilePage from './components/profile/UserProfile'
+import Explore from './pages/Explore'
+import MyCart from './pages/MyCart'
+import Upload from './pages/Upload'
+import { CartProvider } from './context/CartContext'
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-white">
-        <Header />
-        <main className="pt-16"> {/* Add padding top to account for fixed header */}
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/explore" element={<div>Explore Page</div>} />
-            <Route path="/rentals" element={<Rentals/>} />
-            <Route path="/rentals/:id" element={<ProductPage />} />  
-            {/* <Route path="/swapping" element={<div>Swapping Page</div>} /> */}
-            <Route path="/profile" element={<ProfilePage/>}/>
-            <Route path="/login" element={<Login />} />
-          </Routes>
-        </main>
-      </div>
-    </Router>
+    <CartProvider>
+      <Router>
+        <div className="min-h-screen bg-white">
+          <Header />
+          <main className="pt-16"> {/* Add padding top to account for fixed header */}
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/explore" element={<Explore />} />
+              <Route path="/upload" element={<Upload />} />
+              <Route path="/profile" element={<ProfilePage/>}/>
+              <Route path="/login" element={<Login />} />
+              <Route path="/cart" element={<MyCart />} />
+            </Routes>
+          </main>
+        </div>
+      </Router>
+    </CartProvider>
   )
 }
 
