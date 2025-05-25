@@ -6,7 +6,7 @@
 Wearly revolutionizes campus fashion by creating a sustainable, community-driven platform where students can share their wardrobes. Whether it's a formal event, themed party, or just trying out a new style, Wearly makes fashion accessible and affordable for everyone.
 
 ### Why Wearly?
-- Save money on occasional wear items
+- Spend less on occasional wear
 - Promote sustainable fashion
 - Build community through shared fashion
 - Express yourself with diverse style options
